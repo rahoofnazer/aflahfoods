@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Areen - Aflah</title>
+<link rel="shortcut icon" href="assets/img/icon.jpg">
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+
+
+<!-- Core Style Sheets -->
+<link rel="stylesheet" href="assets/css/master.css">
+<!-- Responsive Style Sheets -->
+<link rel="stylesheet" href="assets/css/responsive.css">
+<!-- Revolution Style Sheets -->
+<link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+<link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+<link rel="stylesheet" type="text/csss" href="revolution/css/navigation.css">
+<link rel="stylesheet" type="text/csss" href="revolution/css/mycss.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<link rel='stylesheet' href='revolution/css/revolution.addon.bubblemorph.css' type='text/css' media='all' />
+
+<!-- CUSTOM CSS -->
+<style type="text/css">body{margin: 0}.bm-gradient{background:-webkit-linear-gradient(left,#2ac3ff 0%,#ffdb4f 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.bm-gradient2{background:-webkit-linear-gradient(left,#452aff 0%,#45ffff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.bm-gradient3{background:-webkit-linear-gradient(left,#4f00f6 0%,#b000f7 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}</style>
+<style type="text/css">
+.hermes.tp-bullets{}.hermes .tp-bullet{overflow:hidden;  border-radius:50%;  width:16px;  height:16px;  background-color:rgba(0,0,0,0);  box-shadow:inset 0 0 0 2px rgba(204, 204, 204, 0);  -webkit-transition:background 0.3s ease;  transition:background 0.3s ease;  position:absolute}.hermes .tp-bullet:hover{background-color:rgba(204, 204, 204, 0)}.hermes .tp-bullet:after{content:' '; position:absolute; bottom:0; height:0; left:0; width:100%; background-color:rgba(204, 204, 204, 0); box-shadow:0 0 1px rgb(204,204,204); -webkit-transition:height 0.3s ease; transition:height 0.3s ease}.hermes .tp-bullet.selected:after{height:100%}
+
+
+
+/* STRUCTURE */
+
+
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.column {
+	flex: 1;
+	border: 1px solid rgba(255, 255, 255, 0);
+	margin: 2px;
+	padding: 10px;
+	&:first-child { margin-left: 0; };
+	&:last-child { margin-right: 0; }
+	
+}
+
+
+
+@media screen and (max-width: 980px) {
+  .columns .column {
+		margin-bottom: 1px;
+    flex-basis: 40%;
+		&:nth-last-child(2) {
+			margin-right: 0;
+		}
+		&:last-child {
+			flex-basis: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.columns .column {
+		flex-basis: 100%;
+		margin: 0 0 1px 0;
+	}
+}
+
+.testimonial .slick-dots li button, .team-slider .slick-dots li button, .blog-slider .slick-dots li button, .service-slider .slick-dots li button, .service-slider-2 .slick-dots li button, .testimonial-style-6 .slick-dots li button, .app-gallery-slider .slick-dots li button {
+    font-size: 0;
+    width: 50px;
+    height: 3px;
+    padding: 0px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    background: rgb(0 0 0 / 0%);
+}
+
+.testimonial .slick-dots li.slick-active button, .team-slider .slick-dots li.slick-active button, .service-slider .slick-dots li.slick-active button, .service-slider-2 .slick-dots li.slick-active button {
+    background: -webkit-linear-gradient(left, rgb(0 0 0 / 0%) 0%,rgb(0 0 0 / 0%) 100%);
+    background: -moz-linear-gradient(left, rgba(248,87,166,1) 0%,rgba(255,88,88,1) 100%);
+    background: -ms-linear-gradient(left, rgba(248,87,166,1) 0%,rgba(255,88,88,1) 100%);
+    background: -o-linear-gradient(left, rgba(248,87,166,1) 0%,rgba(255,88,88,1) 100%);
+    background: linear-gradient(left, rgba(248,87,166,1) 0%,rgba(255,88,88,1) 100%);
+}
+
+
+
+.whatsapp-float {
+			position: fixed;
+			bottom: 20px;
+			width: 60px;
+    height: 60px;
+			left: 20px;
+			z-index: 99;
+			background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+		}
+		@media (max-width: 768px) {
+			.whatsapp-float {
+			    bottom: 31px;
+    left: 25px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+			}
+		}
+
+	
+		.slider{
+  max-width: 1100px;
+  display: flex;
+}
+.slider .card{
+  flex: 1;
+  margin: 0 10px;
+  background: #ffffff00;
+}
+.slider .card .img{
+  height: 370px;
+  width: 100%;
+}
+.slider .card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .card .content{
+  padding: 10px 20px;
+}
+.card .content .title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.card .content .sub-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 20px;
+}
+.card .content p{
+  text-align: justify;
+  margin: 10px 0;
+}
+.card .content .btn{
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.card .content .btn button{
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card .content .btn button:hover{
+  transform: scale(0.9);
+}
+@media only screen and (max-width: 479px){
+.rev-slidebg {
+    background-image: url('assets/img/bgsm.jpg');
+}}
+
+@media only screen and (max-width: 479px){
+.rev_slider fullscreenbanner {
+    background-image: url('assets/img/bgsm.jpg');
+}}
+
+</style>
+
+</head>
+<body style="font-family:Poppins;">
+
+<!--== Loader Start ==-->
+<!-- <div id="loader-overlay">
+  <div class="loader">
+      <div class="loader-inner"></div>
+  </div>
+</div> -->
+<!--== Loader End ==-->
+<!-- <a href="https://wa.link/dsvcv8" target="_blank" class="whatsapp-float">
+	<i style="margin-top: 15px;" class="fa fa-whatsapp my-float"></i>
+</a> -->
+
+<!--== Wrapper Start ==-->
+<div class="wrapper">
+  <!--== Header Start ==-->
+  <nav class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav on no-full no-border">
+	<!--== Start Top Search ==-->
+  <div class="fullscreen-search-overlay" id="search-overlay"> <a href="#" class="fullscreen-close" id="fullscreen-close-button"><i class="icofont icofont-close"></i></a>
+	<div id="fullscreen-search-wrapper">
+	  <form method="get" id="fullscreen-searchform">
+		<input type="text" value="" placeholder="Type and hit Enter..." id="fullscreen-search-input" class="search-bar-top">
+		<i class="fullscreen-search-icon icofont icofont-search">
+		<input value="" type="submit">
+		</i>
+	  </form>
+	</div>
+  </div>
+  <!--== End Top Search ==-->
+  <div class="container-fluid">
+	<!--== Start Atribute Navigation ==-->
+	<!-- <div class="attr-nav hidden-xs sm-display-none">
+	  <ul class="social-media-dark social-top">
+		<li class="side-menu"><a href="#"><i class="icofont icofont-navigation-menu"></i></a></li>
+		<li><a href="#" class="icofont icofont-social-facebook"></a></li>
+		<li><a href="#" class="icofont icofont-social-twitter"></a></li>
+	  </ul>
+	</div> -->
+	<!--== End Atribute Navigation ==-->
+
+	<!--== Start Header Navigation ==-->
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="tr-icon ion-android-menu"></i> </button>
+	  <div class="logo"> <a href="index.html">
+		 <img class="logo logo-display" src="assets/img/logow.png" alt="">
+		  <img class="logo logo-scrolled" src="assets/img/logo.png" width="230%">
+		 </a> </div>
+	</div>
+	<!--== End Header Navigation ==-->
+
+	<!--== Collect the nav links, forms, and other content for toggling ==-->
+	<div class="collapse navbar-collapse" id="navbar-menu">
+	  <ul class="nav navbar-nav navbar-right" data-in="fadeIn" data-out="fadeOut">
+		<!-- <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Concepts</a>
+		   <ul class="dropdown-menu">
+			 <li><a href="creative-agency.html">Creative Agency</a></li>
+			 <li><a href="digital-agency.html">Digital Agency</a></li>
+			 <li><a href="minimal-agency.html">Minimal Agency</a></li>
+			 <li><a href="design-studio.html">Design Studio</a></li>
+			 <li><a href="landing.html">Landing</a></li>
+			 <li><a href="freelancer.html">Freelancer</a></li>
+			 <li><a href="business.html">Business</a></li>
+			 <li><a href="startups.html">Startups</a></li>
+			 <li><a href="fashion.html">Fashion</a></li>
+			 <li><a href="classic.html">Classic</a></li>
+			 <li><a href="architect.html">Architect</a></li>
+			 <li><a href="onepage.html">One Page</a></li>             </ul>
+		 </li> -->
+		 <li><a class="page-scroll" href="index.html" style=" font-weight: 800;">Home</a></li>
+		 <li><a class="page-scroll" href="#about" style=" font-weight: 800;">About Us</a></li>
+		 <li><a class="page-scroll" href="products.html" style=" font-weight: 800;">Products</a></li>
+		 <!-- <li><a class="page-scroll" href="#service" style="">Services</a></li> -->
+		 <li><a class="page-scroll" href="#goal" style=" font-weight: 800;">Goals</a></li>
+		 <li><a class="page-scroll" href="#contact" style=" font-weight: 800;">Contacts</a></li>
+	  </ul>
+	</div>
+	<!--== /.navbar-collapse ==-->
+  </div>
+
+</nav>
+  <!--== Header End ==-->
+
+  <!--== Hero Slider Start ==-->
+  <section class="remove-padding transition-none">
+    <div id="rev_slider_263_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="bubble-morph" data-source="gallery" style="background:transparent;padding:0px;">
+    <!-- START REVOLUTION SLIDER 5.4.7.4 fullscreen mode -->
+    	<div id="rev_slider_263_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.7.4">
+    <ul>	<!-- SLIDE  -->
+
+    	
+    	<!-- SLIDE  -->
+    	<li data-index="rs-640" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="http://localhost/wordpress/wp-content/"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+    		<!-- MAIN IMAGE -->
+    		<img style="z-index: 1;" src="assets/img/bg3.jpg" data-bgcolor='#ffffff' style='background:#ffffff' alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+    		<!-- LAYERS -->
+    		<div id="rrzm_640" class="rev_row_zone rev_row_zone_middle" style="z-index: 8;">
+
+    		<!-- LAYER NR. 33 -->
+    		<div class="tp-caption  "
+    			 id="slide-640-layer-2"
+    			 data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
+    			 data-y="['middle','middle','middle','middle']" data-voffset="['-426','-426','-426','-426']"
+    						data-width="none"
+    			data-height="none"
+    			data-whitespace="nowrap"
+
+    			data-type="row"hi
+    			data-columnbreak="3"
+    			data-responsive_offset="on"
+    			data-responsive="off"
+    			data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+    			data-margintop="[0,0,0,0]"
+    			data-marginright="[0,0,0,0]"
+    			data-marginbottom="[0,0,0,0]"
+    			data-marginleft="[0,0,0,0]"
+    			data-textAlign="['inherit','inherit','inherit','inherit']"
+    			data-paddingtop="[0,0,0,0]"
+    			data-paddingright="[100,75,50,30]"
+    			data-paddingbottom="[0,0,0,0]"
+    			data-paddingleft="[100,75,50,30]"
+
+    			style="z-index: 8; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
+    		<!-- LAYER NR. 34 -->
+    		<div class="tp-caption  "
+    			 id="slide-640-layer-3"
+    			 data-x="['left','left','left','left']" data-hoffset="['100','100','100','100']"
+    			 data-y="['top','top','top','top']" data-voffset="['100','100','100','100']"
+    						data-width="none"
+    			data-height="none"
+    			data-whitespace="nowrap"
+
+    			data-type="column"
+    			data-responsive_offset="on"
+    			data-responsive="off"
+    			data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+          data-columnwidth="100%"
+          data-verticalalign="top"
+    			data-margintop="[0,0,0,0]"
+    			data-marginright="[0,0,0,0]"
+    			data-marginbottom="[0,0,0,0]"
+    			data-marginleft="[0,0,0,0]"
+    			data-textAlign="['center','center','center','center']"
+    			data-paddingtop="[0,0,0,0]"
+    			data-paddingright="[0,0,0,0]"
+    			data-paddingbottom="[90,90,90,0]"
+    			data-paddingleft="[0,0,0,0]"
+
+    			style="z-index: 9; width: 100%;">
+    		<!-- LAYER NR. 35 -->
+    	
+    		<!-- LAYER NR. 36 -->
+    		<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
+    			 id="slide-640-layer-19"
+    			 data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
+    			 data-y="['top','top','top','top']" data-voffset="['0','0','0','0']"
+    						data-width="full"
+    			data-height="['30','30','20','10']"
+    			data-whitespace="normal"
+
+    			data-type="shape"
+    			data-responsive_offset="on"
+
+    			data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+    			data-margintop="[0,0,0,0]"
+    			data-marginright="[0,0,0,0]"
+    			data-marginbottom="[0,0,0,0]"
+    			data-marginleft="[0,0,0,0]"
+    			data-textAlign="['inherit','inherit','inherit','inherit']"
+    			data-paddingtop="[0,0,0,0]"
+    			data-paddingright="[0,0,0,0]"
+    			data-paddingbottom="[0,0,0,0]"
+    			data-paddingleft="[0,0,0,0]"
+
+    			style="z-index: 19; display: block;"> </div>
+
+
+				<div class="tp-caption    bm-gradient"
+    			 id="slide-640-layer-5"
+    			 data-x="['left','left','left','left']" data-hoffset="['5','5','5','5']"
+    			 data-y="['top','top','top','top']" data-voffset="['5','5','5','5']"
+    						data-fontsize="['30','30','25','20']"
+    			data-lineheight="['35','35','30','25']"
+    			data-width="none"
+    			data-height="none"
+    			data-whitespace="normal"
+
+    			data-type="text"
+    			data-responsive_offset="off"
+    			data-responsive="off"
+    			data-frames='[{"delay":"+290","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
+    			data-margintop="[0,0,0,0]"
+    			data-marginright="[0,0,0,0]"
+    			data-marginbottom="[10,10,10,10]"
+    			data-marginleft="[0,0,0,0]"
+    			data-textAlign="['center','center','center','center']"
+    			data-paddingtop="[0,0,0,0]"
+    			data-paddingright="[0,0,0,0]"
+    			data-paddingbottom="[0,0,0,0]"
+    			data-paddingleft="[0,0,0,0]"
+
+    			style="z-index: 12; white-space: normal; font-size: 30px; line-height: 35px; font-weight: 700; color: #000000; letter-spacing: 0px; display: inline-block;font-family: 'Poppins', sans-serif;">There's Always Time For a Tea. </div>
+
+    		<!-- LAYER NR. 37 -->
+    		<div class="tp-caption  "
+    			 id="slide-640-layer-1"
+    			 data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
+    			 data-y="['top','top','top','top']" data-voffset="['0','0','0','0']"
+    						data-fontsize="['46','46','36','30']"
+    			data-lineheight="['50','50','40','35']"
+    			data-width="none"
+    			data-height="none"
+    			data-whitespace="normal"
+
+    			data-type="text"
+    			data-responsive_offset="off"
+    			data-responsive="off"
+    			data-frames='[{"delay":"+190","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
+    			data-margintop="[0,0,0,0]"
+    			data-marginright="[0,0,0,0]"
+    			data-marginbottom="[0,0,0,0]"
+    			data-marginleft="[0,0,0,0]"
+    			data-textAlign="['center','center','center','center']"
+    			data-paddingtop="[0,0,0,0]"
+    			data-paddingright="[0,0,0,0]"
+    			data-paddingbottom="[0,0,0,0]"
+    			data-paddingleft="[0,0,0,0]"
+
+    			style="z-index: 11; white-space: normal; font-size: 46px; line-height: 50px; font-weight: 800; color: #ffffff; letter-spacing: 0px; display: block;font-family: 'Poppins', sans-serif;">Aflah Trading.</div>
+
+    		<!-- LAYER NR. 38 -->
+    		<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
+    			 id="slide-640-layer-11"
+    			 data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
+    			 data-y="['top','top','top','top']" data-voffset="['0','0','0','0']"
+    						data-width="full"
+    			data-height="10"
+    			data-whitespace="normal"
+
+    			data-type="shape"
+    			data-responsive_offset="on"
+
+    			data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+    			data-margintop="[0,0,0,0]"
+    			data-marginright="[0,0,0,0]"
+    			data-marginbottom="[0,0,0,0]"
+    			data-marginleft="[0,0,0,0]"
+    			data-textAlign="['inherit','inherit','inherit','inherit']"
+    			data-paddingtop="[0,0,0,0]"
+    			data-paddingright="[0,0,0,0]"
+    			data-paddingbottom="[0,0,0,0]"
+    			data-paddingleft="[0,0,0,0]"
+
+    			style="z-index: 16; display: block;"> </div>
+
+    		<!-- LAYER NR. 39 -->
+    		
+
+    		<!-- LAYER NR. 40 -->
+    		<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
+    			 id="slide-640-layer-13"
+    			 data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
+    			 data-y="['top','top','top','top']" data-voffset="['0','0','0','0']"
+    						data-width="full"
+    			data-height="['30','30','30','20']"
+    			data-whitespace="normal"
+
+    			data-type="shape"
+    			data-responsive_offset="on"
+
+    			data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+    			data-margintop="[0,0,0,0]"
+    			data-marginright="[0,0,0,0]"
+    			data-marginbottom="[0,0,0,0]"
+    			data-marginleft="[0,0,0,0]"
+    			data-textAlign="['inherit','inherit','inherit','inherit']"
+    			data-paddingtop="[0,0,0,0]"
+    			data-paddingright="[0,0,0,0]"
+    			data-paddingbottom="[0,0,0,0]"
+    			data-paddingleft="[0,0,0,0]"
+
+    			style="z-index: 17; display: block;"> </div>
+
+    		<!-- LAYER NR. 41 -->
+    		<div class="tp-caption  "
+    			 id="slide-640-layer-6"
+    			 data-x="['left','left','left','left']" data-hoffset="['10','10','10','10']"
+    			 data-y="['top','top','top','top']" data-voffset="['10','10','10','10']"
+    						data-fontsize="['16','16','16','14']"
+    			data-lineheight="['30','30','30','22']"
+    			data-width="['640','480','360','100%']"
+    			data-height="none"
+    			data-whitespace="normal"
+
+    			data-type="text"
+    			data-responsive_offset="off"
+    			data-responsive="off"
+    			data-frames='[{"delay":"+390","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
+    			data-margintop="[0,0,0,0]"
+    			data-marginright="[0,0,0,0]"
+    			data-marginbottom="[0,0,0,0]"
+    			data-marginleft="[0,0,0,0]"
+    			data-textAlign="['center','center','center','center']"
+    			data-paddingtop="[0,0,0,0]"
+    			data-paddingright="[0,0,0,0]"
+    			data-paddingbottom="[0,0,0,0]"
+    			data-paddingleft="[0,0,0,0]"
+
+    			style="z-index: 13; min-width: 640px; max-width: 640px; white-space: normal; font-size: 16px; line-height: 30px; font-weight: 700; color: rgba(255, 255, 255, 0.75); letter-spacing: 0px; display: inline-block;font-family: 'Karla', sans-serif;">Leading distributors of liquid creamers, tea products, marinades, <br>curry pastes and bakery products.
+
+
+
+			</div>
+    		<!-- LAYER NR. 42 -->
+    		<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
+    			 id="slide-640-layer-14"
+    			 data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
+    			 data-y="['top','top','top','top']" data-voffset="['0','0','0','0']"
+    						data-width="full"
+    			data-height="['50','50','50','30']"
+    			data-whitespace="normal"
+
+    			data-type="shape"
+    			data-responsive_offset="on"
+
+    			data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+    			data-margintop="[0,0,0,0]"
+    			data-marginright="[0,0,0,0]"
+    			data-marginbottom="[0,0,0,0]"
+    			data-marginleft="[0,0,0,0]"
+    			data-textAlign="['inherit','inherit','inherit','inherit']"
+    			data-paddingtop="[0,0,0,0]"
+    			data-paddingright="[0,0,0,0]"
+    			data-paddingbottom="[0,0,0,0]"
+    			data-paddingleft="[0,0,0,0]"
+
+    			style="z-index: 18; display: block;"> </div>
+
+    		<!-- LAYER NR. 43 -->
+    		<!-- <a class="tp-caption rev-btn" href="#" target="_blank"	id="slide-640-layer-9"
+    			 data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
+    			 data-y="['top','top','top','top']" data-voffset="['0','0','0','0']"
+    						data-fontsize="['14','14','13','13']"
+    			data-lineheight="['60','60','50','40']"
+    			data-width="['280','280','250','250']"
+    			data-height="none"
+    			data-whitespace="normal"
+
+    			data-type="button"
+    			data-actions=''
+    			data-responsive_offset="off"
+    			data-responsive="off"
+    			data-frames='[{"delay":"+790","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"200","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgb(255,42,115);bg:rgb(255,255,255);"}]'
+    			data-margintop="[0,0,0,0]"
+    			data-marginright="[10,10,10,10]"
+    			data-marginbottom="[10,10,10,10]"
+    			data-marginleft="[10,10,10,10]"
+    			data-textAlign="['center','center','center','center']"
+    			data-paddingtop="[0,0,0,0]"
+    			data-paddingright="[0,0,0,0]"
+    			data-paddingbottom="[0,0,0,0]"
+    			data-paddingleft="[0,0,0,0]"
+
+    			style="z-index: 14; min-width: 280px; max-width: 280px; white-space: normal; font-size: 14px; line-height: 60px; font-weight: 700; color: #ffffff; letter-spacing: 2px; display: inline-block;font-family: 'Poppins', sans-serif;background-color:rgb(255,42,115);border-color:rgb(255,42,115);border-style:solid;border-width:1px 1px 1px 1px;border-radius:30px 30px 30px 30px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;"><i class="fa-icon-gift" style="font-size:20px;"></i> READ MORE </a> -->
+
+    		<!-- LAYER NR. 44 -->
+    		<!-- <a class="tp-caption rev-btn "
+     href="#" target="_blank"			 id="slide-640-layer-17"
+    			 data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
+    			 data-y="['top','top','top','top']" data-voffset="['0','0','0','0']"
+    						data-fontsize="['14','14','13','13']"
+    			data-lineheight="['60','60','50','40']"
+    			data-width="['280','280','250','250']"
+    			data-height="none"
+    			data-whitespace="normal"
+
+    			data-type="button"
+    			data-actions=''
+    			data-responsive_offset="off"
+    			data-responsive="off"
+    			data-frames='[{"delay":"+790","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"200","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgb(255,42,115);bg:rgb(255,255,255);"}]'
+    			data-margintop="[0,0,0,0]"
+    			data-marginright="[10,10,10,10]"
+    			data-marginbottom="[10,10,10,10]"
+    			data-marginleft="[10,10,10,10]"
+    			data-textAlign="['center','center','center','center']"
+    			data-paddingtop="[0,0,0,0]"
+    			data-paddingright="[0,0,0,0]"
+    			data-paddingbottom="[0,0,0,0]"
+    			data-paddingleft="[0,0,0,0]"
+
+    			style="z-index: 15; min-width: 280px; max-width: 280px; white-space: normal; font-size: 14px; line-height: 60px; font-weight: 700; color: #ffffff; letter-spacing: 2px; display: inline-block;font-family: 'Poppins', sans-serif;background-color:rgb(255,42,115);border-color:rgb(255,42,115);border-style:solid;border-width:1px 1px 1px 1px;border-radius:30px 30px 30px 30px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;"><i class="fa-icon-shopping-cart" style="font-size:20px;"></i> BUY A THEME </a> -->
+    				</div>
+    			</div>
+    		</div>
+
+    		<!-- LAYER NR. 45 -->
+    		<div class="tp-caption tp-shape tp-shapewrapper tp-bubblemorph "
+    			 id="slide-640-layer-21"
+    			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+    			 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+    						data-width="100%"
+    			data-height="100%"
+    			data-whitespace="nowrap"
+
+    			data-type="shape"
+    			data-bubblesbg="transparent"
+    			data-numbubbles="6|6|inherit|6"
+    			data-bubblesbufferx="100|50|inherit|20"
+    			data-bubblesbuffery="100|50|inherit|20"
+    			data-bubblesspeedx="0.25|0.25|0.25|0.25"
+    			data-bubblesspeedy="0.25|0.25|0.25|0.25"
+    			data-bubblesbordercolor="#ffdb4f|inherit|inherit|inherit"
+    			data-bubblesbordersize="1|inherit|inherit|inherit"
+    			data-basealign="slide"
+    			data-responsive_offset="on"
+
+    			data-frames='[{"delay":100,"speed":3000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+    			data-textAlign="['inherit','inherit','inherit','inherit']"
+    			data-paddingtop="[0,0,0,0]"
+    			data-paddingright="[0,0,0,0]"
+    			data-paddingbottom="[0,0,0,0]"
+    			data-paddingleft="[0,0,0,0]"
+    			data-blendmode="multiply"
+
+    			style="z-index: 5;"> </div>
+
+    		
+
+    	
+    	</li>
+    </ul>
+    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
+    </div><!-- END REVOLUTION SLIDER -->
+  </section>
+  <!--== Hero Slider End ==-->
+  <!--== Video Start ==-->
+
+
+  <section class="parallax-bg fixed-bg" data-parallax-bg-image="assets/img/7.jpeg" data-parallax-speed="0.8" data-parallax-direction="up" id="bottom">
+    <div class="overlay-bg"></div>
+  	<div class="container">
+		<section class="columns" style="background-color: rgba(255, 255, 255, 0); padding-top: 16px; padding-bottom: 16px;">
+	
+			<div class="column">
+				<div class="video-box">
+					<img class="img-responsive" src="assets/img/9.jpg" style="border-radius: 10px;" alt="">
+					<div class="video-box_overlay">
+					  <div class="center-layout">
+						<div class="v-align-middle"> <a class="popup-youtube" href="https://vimeo.com/806428380">
+						  <div class="play-button"><i class="tr-icon ion-android-arrow-dropright"></i> </div>
+						  </a> </div>
+					  </div>
+					</div>
+				  </div>
+			</div>
+			
+			<div class="column">
+				<div class="info-box">
+					<h4 class="mt-0 gradient-color-2 monserrat-font">Video</h4>
+					<h2 class="mt-0 font-700 white-color" style="font-family:Poppins;">Aflah Trading</h2>
+					<p style="color: white; font-family:Poppins;">
+						We also distribute a wide range of products which has made a huge difference in the market, based on the opinions of the retailers. We manufacture and market our products in the brand name of “ AREEN ”.
+					</p>
+					<p class="mt-40 animation-move-top-sm"><a href="#whoweare" class="btn btn-gradient color-2 btn-lg btn-square page-scroll" style="border-radius: 7px;">Read More</a> </p>
+					
+				  </div>
+			</div>
+		  
+		  <div class="column">
+			<img src="assets/img/nestologo.png" width="35%" style="border-radius: 10px; margin-top: 10px;"><br>
+			<img src="assets/img/spices/grp.png" width="75%" style="margin-top: 10px;">
+			
+			<div class="tp-caption    bm-gradient"
+			id="slide-640-layer-5"
+			data-x="['left','left','left','left']" data-hoffset="['5','5','5','5']"
+			data-y="['top','top','top','top']" data-voffset="['5','5','5','5']"
+					   data-fontsize="['30','30','25','20']"
+		   data-lineheight="['35','35','30','25']"
+		   data-width="none"
+		   data-height="none"
+		   data-whitespace="normal"
+
+		   data-type="text"
+		   data-responsive_offset="off"
+		   data-responsive="off"
+		   data-frames='[{"delay":"+290","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
+		   data-margintop="[0,0,0,0]"
+		   data-marginright="[0,0,0,0]"
+		   data-marginbottom="[10,10,10,10]"
+		   data-marginleft="[0,0,0,0]"
+		   data-textAlign="['center','center','center','center']"
+		   data-paddingtop="[0,0,0,0]"
+		   data-paddingright="[0,0,0,0]"
+		   data-paddingbottom="[0,0,0,0]"
+		   data-paddingleft="[0,0,0,0]"
+
+		   style="z-index: 12; white-space: normal; font-size: 30px; line-height: 35px; font-weight: 700; color: #000000; letter-spacing: 0px; display: inline-block;font-family: 'Poppins', sans-serif;">Exclusively available in all <font color="red">NESTO</font> retail outlets in UAE. </div>
+
+
+			</div>
+			
+		</section>
+  </section>
+
+
+  
+  <!--== Video End ==-->
+
+  <!--== Who We Are Start ==-->
+  <section class="dark-night-bg pb-60" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 section-heading">
+       		  <h5 id="whoweare" class="default-color mt-0 text-uppercase" style="font-family: Poppins;">Who We Are </h5>
+            <h2 class="mt-0 white-color font-700"  style="font-family: Poppins;">Aflah <span class="gradient-color play-font font-800 font-italic">Trading.</span></h2>
+        </div>
+      </div>
+    
+    </div>
+  </section>
+  <!--== Who We Are End ==-->
+
+  <!--== About Start ==-->
+  <section class="dark-night-bg pt-0 pb-0 about-section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+       		  <div class="model-img">
+              <img class="img-responsive" src="assets/img/16.jpeg" alt="model" />
+            </div>
+        </div>
+        <div class="col-md-7">
+          <div class="about-text">
+            <blockquote>
+				AFLAH FOODSTUFF TRADING is a leading DISTRIBUTOR of creamers to the HORECA channel in the UAE. The company was established in 2016 as a UAE representation of Tea ingredients and Retail Food Brands. Over the years, it has spread its services in FMCG distribution all across the UAE and other parts of the GCC.
+				<br>
+				We also distribute a wide range of products, which has made a massive difference in the market, based on the retailers' opinions. We manufacture and market our products under the brand name “AREEN ”.
+				
+            </blockquote>
+            <h2 class="font-700">.Areen</h2>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--== About End ==-->
+
+  <section class="black-bg dark-block pt-0 pb-0" id="work">
+  	<div class="container-fluid remove-padding">
+    	<div class="row">
+            <div class="col-md-12">
+
+            <div id="mosaic-gallery" class="cbp">
+              <div class="cbp-item branding advertising col-md-6 col-sm-6">
+                  <figure class="imghvr-fade text-center portfolio-type-2">
+                        <img src="assets/img/1.jpeg"  alt="97">
+                        <figcaption class="gradient-bg">
+                          <div class="center-layout">
+                            <div class="v-align-middle">
+                              <a class="magnific-lightbox" href="assets/img/1.jpeg">
+                                <i class="icofont icofont-search"></i>
+                              </a>
+                            </div>
+                        </div>
+                      </figcaption>
+                  </figure>
+              </div>
+
+                <div class="cbp-item print web-design col-md-3 col-sm-6 col-xs-12">
+                  <figure class="imghvr-fade text-center portfolio-type-2">
+                        <img src="assets/img/2.jpeg" alt="98">
+                        <figcaption class="gradient-bg">
+                          <div class="center-layout">
+                            <div class="v-align-middle">
+                              <a class="magnific-lightbox" href="assets/img/2.jpeg">
+                                <i class="icofont icofont-search"></i>
+                              </a>
+                            </div>
+                        </div>
+                      </figcaption>
+                  </figure>
+                </div>
+
+                <div class="cbp-item print advertising col-md-3 col-sm-6 col-xs-12">
+                  <figure class="imghvr-fade text-center portfolio-type-2">
+                        <img src="assets/img/3.jpeg" alt="99">
+                        <figcaption class="gradient-bg">
+                          <div class="center-layout">
+                            <div class="v-align-middle">
+                              <a class="magnific-lightbox" href="assets/img/3.jpeg">
+                                <i class="icofont icofont-search"></i>
+                              </a>
+                            </div>
+                        </div>
+                      </figcaption>
+                  </figure>
+                </div>
+
+                <div class="cbp-item branding photography col-md-6 col-sm-6 col-xs-12">
+                  <figure class="imghvr-fade text-center portfolio-type-2">
+                        <img src="assets/img/4.jpeg" alt="100">
+                        <figcaption class="gradient-bg">
+                          <div class="center-layout">
+                            <div class="v-align-middle">
+                              <a class="magnific-lightbox" href="assets/img/4.jpeg">
+                                <i class="icofont icofont-search"></i>
+                              </a>
+                            </div>
+                        </div>
+                      </figcaption>
+                  </figure>
+                </div>
+
+                <div class="cbp-item branding web-design col-md-3 col-sm-6 col-xs-12">
+                  <figure class="imghvr-fade text-center portfolio-type-2">
+                        <img src="assets//img/5.jpeg" width="675px" alt="101">
+                        <figcaption class="gradient-bg">
+                          <div class="center-layout">
+                            <div class="v-align-middle">
+                              <a class="magnific-lightbox" href="assets//img/5.jpeg">
+                                <i class="icofont icofont-search"></i>
+                              </a>
+                            </div>
+                        </div>
+                      </figcaption>
+                  </figure>
+                </div>
+
+                <div class="cbp-item branding web-design col-md-3 col-sm-6 col-xs-12">
+                  <figure class="imghvr-fade text-center portfolio-type-2">
+                        <img src="assets/img/6.jpeg" alt="102">
+                        <figcaption class="gradient-bg">
+                          <div class="center-layout">
+                            <div class="v-align-middle">
+                              <a class="magnific-lightbox" href="assets/img/6.jpeg">
+                                <i class="icofont icofont-search"></i>
+                              </a>
+                            </div>
+                        </div>
+                      </figcaption>
+                  </figure>
+                </div>
+    		      </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!--== Portfolio End ==-->
+
+
+
+
+
+   <!--== Video Start ==-->
+   <section class="parallax-bg fixed-bg mt-0" data-parallax-bg-image="assets/img/7.jpeg" data-parallax-speed="0.8" data-parallax-direction="up" id="product">
+    <div class="overlay-bg"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 section-heading">
+					 <h5 class="default-color mt-0 text-uppercase" style="font-family: Poppins;">What We Serve & Deliver</h5>
+				<h2 class="mt-0 font-700" style="color: white;">Our <span class="gradient-color play-font font-800 font-italic">Products.</span></h2>
+			</div>
+		  </div>
+
+		<div class="slider owl-carousel">
+
+
+			<div class="card">
+			   <div class="img">
+				  <img src="assets/img/spices/1.png" alt="">
+			   </div>
+			</div>
+			<div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/2.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/3.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/4.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/5.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/6.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/7.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/8.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/9.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/10.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/11.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/12.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/13.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/spices/14.png" alt="">
+				</div>
+			 </div>
+<!------------Retail---------------------->
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/1.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/2.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/3.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/4.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/5.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/6.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/7.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/8.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/9.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/10.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/11.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/12.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/13.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/14.png" alt="">
+				</div>
+			 </div>
+			 <div class="card">
+				<div class="img">
+				   <img src="assets/img/retails/png/15.png" alt="">
+				</div>
+			 </div>
+	 
+	 
+				 
+	
+	
+		 </div>
+		  
+
+
+
+
+	
+	
+
+	<br><br>
+	<center>  <a href="products.html" class="btn btn-gradient color-2 btn-lg btn-square" style="border-radius: 8px;">View More</a>
+	</center>
+  </div>
+
+  </section>
+  <!--== Video End ==-->
+
+
+  <!--== Our Team Start ==-->
+  <section class="white-bg pb-40" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="design-studio-img">
+            <img src="assets/img/17.jpeg" alt="img-01" class="img-responsive">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="design-studio-text">
+            <h5 class="default-color mt-0 text-uppercase">Our Story</h5>
+            <h2 class="mt-0 font-700">Our<span class="gradient-color play-font font-700 font-italic">Presence</span></h2>
+            <h4 class="mt-50 xs-mt-10">We started our journey as a small startup business in 2016. Soon, the company established its presence in the local market and expanded into other parts of the Middle East through Transparency, Teamwork and Trust.
+				We cater to 4000 stores across the UAE. Apart from serving hot cups of Tea in Oman, Bahrain and Qatar, we will be launching soon in Kuwait and other tea-loving communities of the world.</h4><br>
+         <img src="assets/img/cnt.png" width="70%">
+		</div>
+        </div>
+      </div>
+    
+
+    </div>
+  </section>
+  <!--== Our Team End ==-->
+
+
+  <section class="" style="background-image: url('assets/img/bg.jpeg');" id="goal">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 section-heading">
+            <h2 class="mt-0 font-700 black-color" style="font-family: Poppins;">Bring The <span class="gradient-color play-font font-800 font-italic">World</span> Closer</h2>
+        </div>
+      </div>
+      <div class="row mt-50 blog-style-dark">
+        <div class="col-md-6 col-sm-4 col-xs-12">
+          <div class="post animation-move-top">
+            <div class="post-img"> <img class="img-responsive" src="assets/img/mission.png" alt=""> </div>
+        
+          </div>
+        </div>
+        <!--== Post End ==-->
+
+        <div class="col-md-6 col-sm-4 col-xs-12">
+          <div class="post animation-move-top">
+            <div class="post-img"> <img class="img-responsive" src="assets/img/vision.png" alt=""> </div>
+           
+          </div>
+        </div>
+        <!--== Post End ==-->
+      </div>
+
+    </div>
+  </section>
+
+  
+
+
+
+  <!--== Contact Us Start ==-->
+  <section class="grey-bg" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 col-md-12 xs-mb-30">
+          <div class="info-box">
+            <h2 class="mt-0 font-700" style="font-family: Poppins;">Reach Us.</h2>
+            <p>
+				Leading distributors of liquid creamers, tea products, marinades, curry pastes and bakery products.
+            </p>
+
+            <p class="mt-20 font-16px">Address : <b>PB NO 31133, SHOP NO.2
+				OPPOSITE CIVIL DEFENCE, 
+			   JURF INDUSTRIAL AREA3, AJMAN
+			   </b></p>
+            <p class="font-16px">Email Us : <b>Aflahbakeryareen@gmail.com</b></p>
+            <p class="font-16px">Call Us : <b>+971 555050978 / +971 552155032</b></p>
+
+            <div class="row mt-10">
+                <div class="col-md-12 col-sm-10 col-xs-10 text-left social-icons-style-04">
+                  <ul class="md-icon modern-icons">
+                    <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100087924283646&mibextid=ZbWKwL"><i class="icofont icofont-social-facebook"></i></a></li>
+                    <li><a class="twitter" href="https://twitter.com/areenproduct"><i class="icofont icofont-social-twitter"></i></a></li>
+                    <li><a class="behance" href="https://instagram.com/areen_product?igshid=N2ZiY2E3YmU="><i class="icofont icofont-social-instagram"></i></a></li>
+                    <li><a class="linkedin" href="https://www.linkedin.com/in/areen-product-58139b258/"><i class="icofont icofont-social-linkedin"></i></a></li>
+                   
+                  </ul>
+                </div>
+            </div>
+
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </section>
+  <!--== Contact Us End ==-->
+
+  <!--== Call to Actions Start ==-->
+  <!-- <section class="gradient-bg-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 centerize-col text-center">
+              <h5 class="font-40px font-700 white-color">Let’s talk about your next project</h5>
+              <h5 class="mb-30 font-30px white-color font-700">Marketing. Designer & Developer</h5>
+              <a class="btn btn-xl btn-light btn-circle">Join Us</a>
+            </div>
+        </div>
+    </div>
+  </section> -->
+  <!--== Call to Actions End ==-->
+
+  <!--== Footer Start ==-->
+  <footer class="footer" id="footer-fixed">
+    <div class="footer-main">
+      <div class="container">
+     
+            <div class="widget ">
+				<center><img src="/assets//img/logow.png"><br><br>
+              <p style="color: white;">
+				Leading distributors of liquid creamers, tea products, marinades, <br>curry pastes and bakery products.              </p></center><br>
+             
+         
+        
+          <!-- <div class="col-sm-6 col-md-3">
+            <div class="widget widget-links">
+              <h5 class="widget-title">Menu</h5>
+              <ul>
+				<li><a class="page-scroll" href="index.html">Home</a></li>
+				<li><a class="page-scroll" href="#work">About Us</a></li>
+				<li><a class="page-scroll" href="#pr">Products</a></li>
+				<li><a class="page-scroll" href="#team">Services</a></li>
+				<li><a class="page-scroll" href="#pricing">Goals</a></li>
+				<li><a class="page-scroll" href="#contact">Contacts</a></li>
+              </ul>
+            </div>
+          </div> -->
+          <!-- <div class="col-sm-6 col-md-3">
+            <div class="widget widget-text">
+              <h5 class="widget-title">Social Media</h5>
+			  <br>
+			  <div class="footer-copyright">
+				<div class="row">
+			  <div class="col-md-12 col-xs-12">
+				<ul class="social-media">
+				  <li><a href="https://www.facebook.com/profile.php?id=100087924283646&mibextid=ZbWKwL" class="icofont icofont-social-facebook"></a></li>
+						<li><a href="https://twitter.com/areenproduct" class="icofont icofont-social-twitter"></a></li>
+						<li><a href="https://instagram.com/areen.product?igshid=N2ZiY2E3YmU=" class="icofont icofont-social-instagram"></a></li>
+					 <li><a href="https://www.linkedin.com/in/areen-product-58139b258/" class="icofont icofont-social-linkedin"></a></li>
+				</ul>
+			  </div>
+			  </div>
+			  </div>                   
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+	<div class="footer-copyright">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-6 col-xs-12">
+			  <div class="copy-right text-left">© 2024 <span class="gradient-color"> All rights reserved</span> By <a style="text-decoration: none; color: #ff5858;" href="https://www.corest.in">Corest</a>.</div>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<ul class="social-media">
+					<li><a href="https://www.facebook.com/profile.php?id=100087924283646&mibextid=ZbWKwL" class="icofont icofont-social-facebook"></a></li>
+					<li><a href="https://twitter.com/areenproduct" class="icofont icofont-social-twitter"></a></li>
+					<li><a href="https://instagram.com/areen_product?igshid=N2ZiY2E3YmU=" class="icofont icofont-social-instagram"></a></li>
+					<li><a href="https://www.linkedin.com/in/areen-product-58139b258/" class="icofont icofont-social-linkedin"></a></li>
+				  </ul>
+			</div>
+		  </div>
+		</div>
+	  </div>
+  </footer>
+  <!--== Footer End ==-->
+
+  <!--== Go to Top  ==-->
+  <a href="javascript:" id="return-to-top"><i class="icofont icofont-arrow-up"></i></a>
+  <!--== Go to Top End ==-->
+
+</div>
+
+<!--== Javascript Plugins ==-->
+<script type="text/javascript">
+      var revapi263,
+      tpj;
+      (function() {
+      if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoad); else onLoad();
+      function onLoad() {
+      if (tpj===undefined) { tpj = jQuery; if("off" == "on") tpj.noConflict();}
+      if(tpj("#rev_slider_263_1").revolution == undefined){
+      revslider_showDoubleJqueryError("#rev_slider_263_1");
+      }else{
+      revapi263 = tpj("#rev_slider_263_1").show().revolution({
+        sliderType:"standard",
+        jsFileLocation:"revolution/js/",
+        sliderLayout:"fullscreen",
+        dottedOverlay:"none",
+        delay:9000,
+        navigation: {
+          keyboardNavigation:"on",
+          keyboard_direction: "horizontal",
+          mouseScrollNavigation:"off",
+                mouseScrollReverse:"default",
+          onHoverStop:"off",
+          touch:{
+            touchenabled:"on",
+            touchOnDesktop:"off",
+            swipe_threshold: 75,
+            swipe_min_touches: 1,
+            swipe_direction: "horizontal",
+            drag_block_vertical: false
+          }
+          ,
+          bullets: {
+            enable:true,
+            hide_onmobile:false,
+            style:"hermes",
+            hide_onleave:false,
+            direction:"horizontal",
+            h_align:"center",
+            v_align:"bottom",
+            h_offset:0,
+            v_offset:20,
+            space:5,
+            tmp:''
+          }
+        },
+        responsiveLevels:[1240,1024,778,480],
+        visibilityLevels:[1240,1024,778,480],
+        gridwidth:[1240,1024,778,480],
+        gridheight:[868,768,960,720],
+        lazyType:"none",
+        shadow:0,
+        spinner:"off",
+        stopLoop:"on",
+        stopAfterLoops:0,
+        stopAtSlide:1,
+        shuffle:"off",
+        autoHeight:"off",
+        fullScreenAutoWidth:"off",
+        fullScreenAlignForce:"off",
+        fullScreenOffsetContainer: "",
+        fullScreenOffset: "",
+        disableProgressBar:"on",
+        hideThumbsOnMobile:"off",
+        hideSliderAtLimit:0,
+        hideCaptionAtLimit:0,
+        hideAllCaptionAtLilmit:0,
+        debugMode:false,
+        fallbacks: {
+          simplifyAll:"off",
+          nextSlideOnWindowFocus:"off",
+          disableFocusListener:false,
+        }
+      });
+      }; /* END OF revapi call */
+
+      BubbleMorphAddOn(jQuery, revapi263, false)
+
+      }; /* END OF ON LOAD FUNCTION */
+      }()); /* END OF WRAPPING FUNCTION */
+</script>
+<script>
+	$("#submit-form").submit((e)=>{
+		e.preventDefault()
+		$.ajax({
+			url:"https://script.google.com/macros/s/AKfycbyIxTz76el6Oe9gwJFMDxe0J3keMjGLrAD6lcanco-l8freL4n7eTb0HW7GWgtDexjN/exec",
+			data:$("#submit-form").serialize(),
+			method:"post",
+			success:function (response){
+				alert("Form submitted successfully")
+				window.location.reload()
+			},
+			error:function (err){
+				alert("Something Error")
+
+			}
+		})
+	})
+</script>
+
+<script>
+	$(".slider").owlCarousel({
+	  loop: true,
+	  autoplay: true,
+	  autoplayTimeout: 2000, //2000ms = 2s;
+	  autoplayHoverPause: true,
+	  responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+	},
+	 nav:true,
+      navText:[`<i class="icofont icofont-arrow-left></i>`]
+});
+ </script>
+  
+
+<script src="assets/js/jquery.min.js"></script>
+<!--<script src="assets/js/smoothscroll.js"></script>-->
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/master.js"></script>
+
+<!-- Revolution js Files -->
+<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="revolution/js/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="revolution/js/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="revolution/js/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="revolution/js/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="revolution/js/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="revolution/js/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="revolution/js/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="revolution/js/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="revolution/js/revolution.extension.video.min.js"></script>
+<script type='text/javascript' src='revolution/js/revolution.addon.bubblemorph.min.js'></script>
+<!--== Javascript Plugins End ==-->
+
+</body>
+</html>
